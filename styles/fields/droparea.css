@@ -22,7 +22,7 @@
         color: #A8a29e;
     }
 
-    &:hover {
+    &:hover, &:has(input:focus) {
         border-width: 2px;
         border-color: var(--stroke-highlight);
         background-color: var(--surface-secondary);
@@ -30,6 +30,10 @@
 
         & p {
             color: var(--text-tertiary);
+        }
+
+        & svg path {
+            stroke: var(--stroke-highlight)
         }
     }
 }
