@@ -48,5 +48,20 @@ inpu[type="date"]:focus-within{
 
 select {
     background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
 
+.address .flex {
+    gap: 1.25rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled]{
+        background-color: var(--surface-disabled);
+        color: var(--text-primary);
+        border: 1px solid var(--stroke-default);
+    }
 }
